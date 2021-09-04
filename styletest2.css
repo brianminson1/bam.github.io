@@ -1,0 +1,117 @@
+*{  
+    color:white;
+}
+
+body{
+    background: black;
+    font-family: sans-serif;
+}
+
+.Page-Header {
+    text-align: center;
+    border: 5px white solid;
+    border-radius: 1rem;
+    padding: 3px;
+    margin: 3px;
+}
+.Introduction-Title {
+  text-align: center;
+  border: 5px white solid;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 3px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:gray;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color:black;
+  }
+
+  a:visited{
+      color:blue;
+  }
+
+footer{
+    font-size: 10px;
+    position: static;
+    color: gray;
+}
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+
+/*Creating liquid layout*/
+*{
+  margin:0px;
+}
+.wrap{ 
+  width:80%;       
+  margin:auto;    
+}
+.Page-Header{
+  padding: 10px;
+  background:black;
+}
+.Tech{
+  height:50px;
+  background:gray;
+}
+.container{
+  background:white;
+}
+.Introduction{
+  width: 22%;   
+  background:gray;
+  float:left;
+  border: 5px white solid;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 3px;
+}
+.section{
+  width: 73%;   
+  background:gray;
+  float:left;
+  border: 5px white solid;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 3px;
+}
+.footer{
+padding:10px;
+background:gray;
+position: absolute;
+bottom: 10px;
+}
+.clear{
+clear:both;
+}
+
+
+
