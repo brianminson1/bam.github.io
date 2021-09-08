@@ -143,7 +143,7 @@
   <footer>
     <article class="footer_column">
       <h3>TECHNOLOGY IMPACT</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/K334VdmCSMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/K334VdmCSMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p>Watch this short video of Derek Kennedy, Managing Director of the Boston Consulting Group, as he talks about the impact of technology in the workplace. </p>
     </article>
     <article class="footer_column">
@@ -157,8 +157,48 @@
   <!-- Footer Section -->
   <section class="footer_banner" id="contact">
     <h2 class="hidden">Footer Banner Section </h2>
-    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
-    <div class="button">subscribe</div>
+    <p class="hero_header">FOR MORE INFORMATION PLEASE CONTACT US</p>
+
+<!-- Form for Assessment 5 -->
+  <form action="response_page.php" method="post">
+  <fieldset>
+    <legend>Please Fill Out Form Below:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br>
+    <p>Please select your job title:</p>
+    <input type="radio" id="team member" name="job_title" value="HTML">
+    <label for="team member">Team Member</label><br>
+    <input type="radio" id="manager" name="job_title" value="manager">
+    <label for="manager">Manager</label><br>
+    <input type="radio" id="executive" name="job_title" value="executive">
+    <label for="executive">Executive</label><br>
+    <label for="country">Please select where your business is located:</label>
+  <select name="country" id="country">
+    <optgroup label="United States">
+      <option value="Continental US">Continental US</option>
+      <option value="Hawaii, Alaska, Territories">Hawaii, Alaska, Territories</option>
+    </optgroup>
+    <optgroup label="International">
+      <option value="Asia">Asia</option>
+      <option value="Australia">Australia</option>
+      <option value="Africa">Africa</option>
+      <option value="Europe">Europe</option>
+      <option value="South America">South America</option>
+    </optgroup>
+  </select>
+<textarea name="message" rows="10" cols="30">
+Please give a brief description of your needs here and what information you are seeking.
+</textarea><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </fieldset>
+</form>
+
+
     <audio controls autoplay>
          <source src = "Debussy - Rêverie.mp3" type = "audio/mp3" />
          Your browser does not support the <audio> element.
