@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html lang="en-US">
+    <head>
+        <title>Invitation Page</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+            <script src="JS/todotest.js"></script>
+    </head>
+<body>
+<header>
+    <div class="top">
+        <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+    </div>
+    <nav>
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invitation.html" class="active">Invitation</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="pageForm">
+<form id = "form" action="#" onsubmit="return create_invitation();">
+  
+<label for="recipientName_form">Number Of Recipients: </label>
+<input type="number" name="recipientName_form" id="recipientName_form" placeholder="Enter your Recipient Name" /> <br>
+<label for="organizationName_form">Organization name: </label>
+<input type="text" name="organizationName_form" id="organizationName_form" placeholder="Enter your Organization Name" /> <br>
+<label for="eventDate_form">Event Date: </label>
+<input type="text" name="eventDate_form" id="eventDate_form" placeholder="Enter your Event Date" /> <br>
+<label for="websiteURL_form">URL: </label>
+<input type="text" name="websiteURL_form" id="websiteURL_form" placeholder="Enter your Website URL" /> <br>
+<label for="hostName_form">Host name: </label>
+<input type="text" name="hostName_form" id="hostName_form" placeholder="Host Name" /> <br>
+<input type="submit" value="Submit"> <br>
+</form>
+<form id = "RecipientNamesForm" onsubmit="return fillInvitations()">
+  
+</form>
+</section>
+<article id="placeholderContent">
+Hello <span id="recipientName">recipientName</span>! <br/> <br/>
+You have been invited to volunteer for an event held by <span id="organizationName">organizationName </span> on <span id="eventDate">eventDate</span>. Please come to the following website: <span id="websiteURL">websiteURL</span> to sign up as a volunteer.
+<br/>
+<br/> Thanks!
+<br/>
+<br/>
+<span id="hostName">hostName</span>
+</article>
+<article id = "Content"></article>
+<footer>This events site is for IT-FP3215 tasks.</footer>
+</body>
+
+</html>
