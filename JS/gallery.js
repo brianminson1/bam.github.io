@@ -6,25 +6,22 @@ var images = [];
             var img = new Image();
             img.src = images[i].src;
         }
-        console.log('Preloading completed!')
     }
+    preload(
+        "event.jpg",
+        "firefighter.jpg",
+        "silhouette.jpg",
+        "work.jpg"
+    )
 
-    function yourRollOverfunction() {
-        // i don't understand what you want to do here
-        // but whatever you want to be done on rollover,
-        // can be mentioned here.
-    }
+    preloadAllImages();
 
-    window.onload = function() {
-        // find all images in document
-        images = document.getElementsByTagName('img');
-
-
-        preloadAllImages();
-
-        // attach a rollover function to all the images:
-        for(var i = 0; i < images.length; i++) {
-            // attach rollover function
-            images[i].addEventListener("mouseover", yourRollOverfunction);
-        }
-    };
+    function bigImg(x) {
+        x.style.height = "400px";
+        x.style.width = "600px";
+      }
+      
+      function normalImg(x) {
+        x.style.height = "130px";
+        x.style.width = "180px";
+      }

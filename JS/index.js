@@ -8,9 +8,7 @@ var images = [];
             var img = new Image();
             img.src = images[i].src;
         }
-        console.log('Preloading completed!')
     }
-
     function cycleBanner() {
 
         // if paused, then don't do anything
