@@ -3,7 +3,7 @@ var images = [];
     var pause = false;
 
     function preloadAllImages() {
-        // get the src of all images in docuemnt and then preload them
+        // Preload function
         for(var i = 0; i < images.length; i++) {
             var img = new Image();
             img.src = images[i].src;
@@ -13,28 +13,25 @@ var images = [];
 
         // if paused, then don't do anything
         if(!pause) {
-            // first hide all banner images
+            // First hide all banner images
             for(var i = 0; i < images.length; i++) {
                 images[i].style.display = "none";
             }
-
-            // increment the counter to next image
             currentBannerImg++;
             if(currentBannerImg == images.length) {
                 currentBannerImg = 0;
             }
-            // make current image visible
             images[currentBannerImg].style.display = "block";
 
             console.log('Cycling through banner images')
         }
 
-        // call the cycleBanner function after 3 seconds again, to make cycle
+        // Cycle for 3 seconds
         setTimeout(cycleBanner, 3000);
     }
 
     window.onload = function() {
-        // find all images in document inside bannerImages section
+        // Onload function for preloading
         images = document.getElementById('bannerImages').getElementsByTagName('img');
 
         preloadAllImages();

@@ -1,7 +1,7 @@
 var images = [];
 
     function preloadAllImages() {
-        // get the src of all images in docuemnt and then preload them
+        // Preload function for the iamges
         for(var i = 0; i < images.length; i++) {
             var img = new Image();
             img.src = images[i].src;
@@ -14,9 +14,14 @@ var images = [];
         "work.jpg"
     )
 
-    preloadAllImages();
+    window.onload = function() {
+        // Onload function for the preload
+        images = document.getElementById('galleryimages').getElementsByTagName('img');
+        preloadAllImages();
+    }
 
     function bigImg(x) {
+        // mouseover function added to html
         x.style.height = "400px";
         x.style.width = "600px";
       }
