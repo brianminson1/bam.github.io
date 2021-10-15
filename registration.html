@@ -4,6 +4,7 @@
 <head>
     <title>Invitation Page</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+   
 </head>
 
 <body>
@@ -26,8 +27,9 @@
         </nav>
     </header>
     <section id="pageForm">
-        <form action="#">
-            <label for="userName">Username:</label>
+        <form name="Confirmation" action="confirmation.php" onsubmit="return validateForm()" method="post">
+            <label for="userName">Username:
+            </label>
             <input type="text" name="userName" placeholder="Enter your Username" />
 
             <label for="Password">Password:
@@ -45,12 +47,15 @@
             <label for="hostName">Last Name:
             </label>
             <input type="text" name="lastName" placeholder="Enter your Last Name" />
+
             <label for="email">Email:
             </label>
             <input type="text" name="email" placeholder="Enter your Email Address" />
+
 			<label for="phoneNumber">Phone Number
             </label>
-            <input type="text" name="lastName" placeholder="Enter your Phone Number" />
+            <input type="text" name="phoneNumber" placeholder="Enter your Phone Number" />
+
 			<label for="signUpNewsletter">Sign up for newsletter:
             </label>
 			  <input type="radio" name="signUpNewsletter" value="Yes" checked> Yes 
@@ -61,6 +66,8 @@
 
     <footer>This events site is for IT-FP3215 tasks.
     </footer>
+
 </body>
+<script src="JS/validate.js"></script> 
 
 </html>
