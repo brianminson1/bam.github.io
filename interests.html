@@ -26,12 +26,48 @@
         </nav>
     </header>
     <section id="pageForm">
-        <form action="#">
+        <form name="confirmstage" action="confirm.html" onsubmit="return validateForm()" method="post">
 			
             <!--
 			Include other form fields here
 			
 			-->
+            <label for="Interests">Interests:
+            </label>
+            <br/>
+
+            <input type="checkbox" id="leader" name="leader" checked>
+            <label for="leader">Leadership</label>
+
+            <input type="checkbox" id="humanity" name="humanity" checked>
+            <label for="humanity">Humanitarian Projects</label>
+
+            <input type="checkbox" id="nature" name="nature" checked>
+            <label for="nature">Evironmental Protection Projects</label>
+
+            <br/>
+            <br/>
+
+            <label for="signUpNewsletter">Sign up for newsletter:
+            </label>
+			  <input type="radio" name="signUpNewsletter" value="Yes" checked> Yes 
+				<input type="radio" name="signUpNewsletter" value="No"> No
+
+                <br/>
+                <br/>
+
+            <label for="Comments">Comments:
+            </label>
+            <input type="text" name="comments" id="comments" placeholder="Enter your comments..." />
+
+            <label for="reference">Referred By:
+            </label>
+            <input type="text" name="reference" id="reference" placeholder="Referred By:" />
+
+            
+
+
+
             <input type="hidden" name="userName"/>
             <input type="hidden" name="password"/>
             <input type="hidden" name="passwordVerify" />
@@ -39,14 +75,16 @@
             <input type="hidden" name="lastName" />
             <input type="hidden" name="email"/>
             <input type="hidden" name="lastName" />
-			<input type="hidden" name="signUpNewsletter"/ >
+			<input type="hidden" name="signUpNewsletter"/>
 			
-            <input type="submit" value="Register">
+            <input type="submit" value="Register" onclick="setCookie();"/>
         </form>
     </section>
 
     <footer>This events site is for IT-FP3215 tasks.
     </footer>
 </body>
+
+<script src="JS/validate.js"></script>
 
 </html>
