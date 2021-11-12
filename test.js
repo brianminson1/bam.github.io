@@ -55,4 +55,4 @@ function getCookie(){
             }
 
 
-    
+            <script src="JS/cookie.js"></script>
