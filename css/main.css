@@ -12,7 +12,6 @@ select ,input[type=password],radio{
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 input[type=number],
 select ,input[type=password],radio{
     width: 100%;
